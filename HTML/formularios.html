@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="">
+
+        <!--Input
+        placeholder: Texto que va a estar en el input
+        maxlenght: longitud maxima dentro del input
+        type: indica de que tipo es el input-->
+        <label for="">Escribe tu nombre</label>
+        <input type="text" placeholder="Full Name" maxlength="10">
+
+        <br>
+
+        <label for="">Dame una descripcion de ti</label>
+        <textarea name="" id=""></textarea>
+
+        <br>
+
+        <label for="">Pais</label>
+        <select name="" id="">
+            <option value="México">México</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Estados Unidos">Estados Unidos</option>
+            <option value="Canada">Canada</option>
+        </select>
+
+        <label for="">Selecciona tu idioma nativo</label>
+        <br>
+
+        <!-- Radio: mientras el name sea el mismo, solo se puede seleccionar una u otra.
+        -->
+        <label for="">Inglés</label>
+        <input type="radio" value="Inglés" name="idioma" id="idioma-ingles">
+
+        <label for="">Español</label>
+        <input type="radio" value="Español" name="idioma" id="idioma-español">
+
+        <br>
+        <!--Checkbox-->
+        <label for="">Acepto términos y condiciones</label>
+        <input type="checkbox" name="Términos">
+
+        <!--Submit: Botón-->
+        <br>
+        <input type="submit" value="Enviar formulario">
+    </form>
+</body>
+</html>

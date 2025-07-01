@@ -1,0 +1,14 @@
+.contenedorPrueba{
+    width: 300px;
+    height: 300px;
+    /*Fondo con color
+    rgb,rgba,nombre del color, hexadecimal (#FFFFFF)*/
+    background-color: rgba(215, 46, 210, 0.761);
+}
+
+body{
+    background-image: url(../../resources/Fondo_SpyXFamily.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}

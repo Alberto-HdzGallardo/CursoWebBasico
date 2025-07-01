@@ -1,0 +1,29 @@
+/*Selectores de etiqueta*/
+
+p{
+    color:rgb(10, 10, 105);
+    line-height: 40px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    text-align: justify;
+}
+
+/*Selector de clase*/
+
+.parrafo-verde{
+    color: rgb(2, 55, 2);
+}
+
+.parrafo-violeta{
+    color: blueviolet;
+}
+
+.parrafo-rojo{
+    color: red;
+}
+
+.L-roja{
+    font-size: 24px;
+    color: red;
+    
+}

@@ -1,0 +1,12 @@
+.caja{
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    margin: 20px;
+}
+
+.relativa{
+    position: relative;
+    top: 40px;
+    left: 50px;
+}

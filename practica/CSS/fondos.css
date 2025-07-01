@@ -6,9 +6,17 @@
     background-color: rgba(215, 46, 210, 0.761);
 }
 
-body{
+.hero-image{
     background-image: url(../../resources/Fondo_SpyXFamily.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     
+
+}
+
+.gradiente{
+    
+    background: linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.1));
+    width: 1000px;
+    height: 720px;
 }

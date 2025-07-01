@@ -1,0 +1,22 @@
+.caja{
+    width: 400px;
+    height: 400px;
+
+    /*padding-left: 40px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;*/
+
+    padding: 80px 80px;
+    margin: 20px 80px;
+    border: 10px red solid;
+    background-color: black;
+}
+
+p{
+    color: turquoise;
+}
+
+*{
+    box-sizing: border-box;
+}

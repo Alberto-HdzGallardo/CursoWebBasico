@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    height: 600px;
+    width: 100%;
+    background-color: blueviolet;
+    gap: 20px;
+    /*row: el eje principal en una fika
+    column: el eje principal en una columna
+    row-reverse: el eje principal está en una fila pero inicio desde el otro extremo (sentido contrario)
+    */
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+
+.main .caja{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    
+}

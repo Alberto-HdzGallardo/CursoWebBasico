@@ -1,0 +1,36 @@
+.parrafo::first-letter{
+    font-size: 30px;
+    color: blue;
+}
+
+.parrafo::first-line{
+    font-weight: bold;
+}
+
+.parrafo::selection{
+    background-color: yellow;
+}
+
+.btn{
+    background-color: red;
+    color: white; 
+    margin: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.btn::after{
+    display: block;
+    content: "";
+    color: black;
+    background-color: rgba(235, 235, 235, 0.882);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    
+     
+}
+
+.btn:hover::after{
+    transform: scale(100);
+    
+}

@@ -1,0 +1,38 @@
+.hero-image{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(100,100,100);
+}
+
+ul li{
+    color: blue;
+    font-size: 4rem;
+}
+
+.subelemento{
+    font-size: 0.5em;
+}
+
+p{
+    font-size: 2.5rem;
+}
+.footer{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(101, 164, 220);
+}
+
+/*Si es menor a 800px y mayor a 400px se coloca el color azul*/
+@media (max-width:800px){
+    .hero-image{
+        background-color: rgb(68, 151, 142);
+    }
+}
+
+/*Si es menor a 400px se coloca el color azul*/
+
+@media(max-width:400px){
+    .hero-image{
+        background-color: red;
+    }
+}

@@ -1,0 +1,101 @@
+.footer{
+    background-color: darkslategray;
+    color: grey;
+    padding: 40px 20px;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.footer .social-icons{
+    margin-bottom: 20px;
+}
+
+.footer .social-icons a{
+    color: grey;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.footer .social-icons a:hover{
+    color: white;
+    background-color: #e50914;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px #e50914;
+}
+
+.clicked{
+    animation: clickPop;
+}
+
+@keyframes clickPop {
+    from{
+        transform: none;
+    }to{
+        transform: scale(1.6) rotate(15deg);
+    }
+    
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-links ul{
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 0;
+    text-align: left;
+    min-width: 150px;
+    
+}
+
+.footer-links li{
+    margin: 8px 0px;
+}
+
+.footer-links a{
+    color: grey;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover{
+    color: white;
+}
+
+.service-code{
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    color: grey;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s ease-in-out;
+}
+
+.service-code:hover{
+    background-color: #222;
+    color: white;
+    border-color: white;
+}
+
+.copyright{
+    margin-top: 20px;
+    color: #222;
+    font-size: 12px;
+}

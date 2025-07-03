@@ -1,0 +1,36 @@
+.caja{
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    margin: 20px;
+}
+
+/*relative: Mueve la caja y los demas elementos respetan su flujo
+absolute: mover la caja pero los demas elementos NO respetan su flujo*/
+.relativa{
+    background-color: green;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+.absoluta{
+    background-color: red;
+    position: absolute;
+    top: 50px;
+    left: 45px;
+}
+
+.padre{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.hija{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    left: 100%;
+}

@@ -1,0 +1,167 @@
+.principal-hero{
+    display: flex;
+    padding: 10px 80px;
+    flex-direction: column;
+    height: 65vh;
+    gap: 20px;
+}
+
+.principal-hero .netflix-series{
+    display: flex;
+    height: 20%;
+    width: 10rem;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+}
+
+.principal-hero .netflix-series .netflix {
+    width: 2rem;
+    height: 2rem;  
+}
+
+.principal-hero .netflix-series .netflix img{
+    width: 100%;
+}
+
+.principal-hero .netflix-series p{
+    letter-spacing: 5px;
+}
+
+.principal-hero .serie{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.principal-hero .serie .logo-serie{
+    display: flex;
+    max-width: 26rem;
+    min-height: 10rem;
+    align-items: center;
+}
+
+.principal-hero .serie .logo-serie .info{
+    display: flex;
+    
+    gap: 20px;
+}
+
+.principal-hero .serie .info .item{
+    
+    letter-spacing: 2px;
+    background-color: rgba(60, 60, 60, 0.1);
+    color: darkgrey;
+    
+}
+
+/*Extra para añadir fondo a la categoria de edad recomendada*/
+.principal-hero .serie .info .fondo-clasificacion{
+    background: #e50914da;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    border: 0.10px solid #e50914da;
+    color: rgb(58, 58, 58);
+    
+}
+
+.principal-hero .serie .info .category button{
+    width: 50px;
+    height: 18px;
+    background-color: #e50914;
+    border-radius: 100%;
+    border-width: 2px;
+}
+
+.principal-hero .serie .descripcion-parrafo{
+    margin-top: 10px;
+    width: 60%;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.buttons .btn{
+    border-radius: 2px;
+    color: white;
+    width: 6.25em;
+    height: 2rem;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttons .btn span{
+    z-index: 2;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.buttons .btn:hover{
+    cursor: pointer;
+}
+
+.buttons .play{
+    background-color: #e50914;
+    margin-right: 20px;
+}
+
+.buttons .play::after{
+    display: block;
+    background-color: none;
+    content:"";
+    width: 20px;
+    height: 20px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.buttons .play:hover::after{
+    transform: scale(400);
+    background-color: white;
+}
+
+.buttons .play:hover span{
+    color: black;
+}
+
+.buttons .list{
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.buttons .list:hover{
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+}
+
+.buttons svg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    fill: none;
+    top: 0;
+    left: 0;
+}
+
+.list rect{
+    stroke: white;
+    stroke-width: 5px;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    
+}

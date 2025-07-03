@@ -1,0 +1,15 @@
+.caja{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    border-radius: 15px;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: ease;
+    
+    transition: all 2s ease-in-out;
+}
+
+.caja:hover{
+    background-color: brown;
+}

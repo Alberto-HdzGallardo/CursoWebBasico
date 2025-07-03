@@ -1,0 +1,25 @@
+.caja{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgb(19, 88, 134);
+    box-sizing: border-box;
+    
+}
+
+@keyframes cambiarColor{
+    from{
+        background-color: rgb(19, 88, 134);
+
+    }to{
+        background-color: tomato;
+    }
+}
+
+.caja:hover{
+    animation-name: cambiarColor;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    
+}

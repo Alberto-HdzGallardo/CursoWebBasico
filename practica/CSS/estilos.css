@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     color: white;
 }
 
@@ -12,26 +12,24 @@ body{
 }
 
 .hero-image{
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    max-width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background: linear-gradient(to right,rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.1)), url(../../resources/Fondo_SpyXFamily.jpg);
     background-size: cover;
     background-position: center 10%;
-    
+    flex-direction: column;
 }
 
 .modal{
     display: none;
     position: fixed;
     z-index: 1000;
-    margin: 0;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .modal-content{
@@ -44,4 +42,11 @@ body{
 
 .close:hover{
     background-color: rgba(255, 255, 255, 0.01);
+}
+
+@media (max-width:1000px){
+    .hero-image{
+        height: auto;
+        background-position: 55% center;
+    }
 }

@@ -40,6 +40,9 @@
     min-height: 10rem;
     align-items: center;
 }
+.principal-hero .serie .logo-serie img{
+    width: 100%;
+}
 
 .principal-hero .serie .logo-serie .info{
     display: flex;
@@ -49,7 +52,7 @@
 
 .principal-hero .serie .info .item{
     
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     background-color: rgba(60, 60, 60, 0.1);
     color: darkgrey;
     
@@ -82,9 +85,10 @@
 }
 
 .buttons{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    
 }
 
 .buttons .btn{
@@ -97,13 +101,13 @@
     font-size: 1rem;
     position: relative;
     overflow: hidden;
+    & span{
+        z-index: 2;
+        position: relative;
+        transition: all 0.3s ease;
+    }
 }
 
-.buttons .btn span{
-    z-index: 2;
-    position: relative;
-    transition: all 0.3s ease;
-}
 
 .buttons .btn:hover{
     cursor: pointer;
@@ -139,7 +143,7 @@
 }
 
 .buttons .list{
-    background-color: transparent;
+    background-color: none;
     transition: all 0.4s ease-in-out;
 }
 
@@ -148,7 +152,7 @@
     border-color: white;
     border-style: solid;
 }
-
+/*
 .buttons svg{
     width: 100%;
     height: 100%;
@@ -164,4 +168,44 @@
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
     
+}*/
+
+@media (max-width: 599px){
+    .principal-hero{
+        padding: 10px 20px;
+    }
+
+    .principal-hero .netflix-series{
+        transform: scale(0.6);
+    }
+
+    .principal-hero .serie .info{
+        width: 100%;
+        gap: 0px;
+        justify-content: space-around;
+        font-size: 0.8rem;
+    }
+
+    .principal-hero .serie .logo-serie{
+        margin-top: 0px;
+        width: 60%;
+    }
+
+    .principal-hero .serie .descripcion-parrafo{
+        margin-top: 30px;
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .buttons{
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .buttons .btn{
+        width: 100%;
+        height: 2.5rem;
+        font-size: 1rem;
+    }   
 }

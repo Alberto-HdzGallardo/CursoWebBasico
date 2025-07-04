@@ -1,10 +1,10 @@
 .footer{
     background-color: darkslategray;
-    color: grey;
-    padding: 40px 20px;
+    color: #777;
+    padding: 60px 40px;
     font-size: 13px;
     text-align: center;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 
 .footer .social-icons{
@@ -12,9 +12,8 @@
 }
 
 .footer .social-icons a{
-    color: grey;
-    margin-left: 10px;
-    margin-right: 10px;
+    color: #777;
+    margin: 0 10px;
     font-size: 18px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -31,31 +30,35 @@
     box-shadow: 0 0 10px #e50914;
 }
 
-.clicked{
-    animation: clickPop;
+.footer .social-icons a.clicked{
+    animation: clickPop 0.3s ease;
 }
 
 @keyframes clickPop {
-    from{
-        transform: none;
-    }to{
-        transform: scale(1.6) rotate(15deg);
+    0%{
+        transform: scale(1) rotate(0deg);
+    }
+    50%{
+        transform: scale(2) rotate(30deg);
+    }
+    100%{
+        transform: scale(1) rotate(0deg);
     }
     
 }
 
 .footer-links{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    
     margin-bottom: 20px;
+    
 }
 
 .footer-links ul{
     list-style: none;
-    margin-left: 10px;
-    margin-top: 30px;
+    margin: 10px 30px;
     padding: 0;
     text-align: left;
     min-width: 150px;
@@ -67,21 +70,22 @@
 }
 
 .footer-links a{
-    color: grey;
+    color: #777;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease-in-out;
 }
 
 .footer-links a:hover{
     color: white;
+    text-decoration: underline;
 }
 
 .service-code{
     background-color: transparent;
     border-width: 1px;
     border-style: solid;
-    border-color: grey;
-    color: grey;
+    border-color: #777;
+    color: #777;
     padding: 8px 20px;
     cursor: pointer;
     font-size: 13px;
